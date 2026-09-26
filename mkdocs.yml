@@ -1,0 +1,109 @@
+site_name: React Mastery Path
+site_description: A structured, module-wise React training program — hooks-first, from your first component to large-app architecture.
+site_url: https://sigilipelli.github.io/react-mastery-path/
+repo_url: https://github.com/sigilipelli/react-mastery-path
+repo_name: react-mastery-path
+
+theme:
+  name: material
+  favicon: assets/favicon.svg
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/progress-tracker.css
+
+extra_javascript:
+  - javascripts/progress-tracker.js
+
+nav:
+  - Home: index.md
+  - Privacy Policy: privacy.md
+  - License: license.md
+  - "Level 1 · Entry":
+      - Overview: level-1/index.md
+      - "01 · Setup with Vite & Your First Component": level-1/01-setup-vite.md
+      - "02 · JSX in Depth": level-1/02-jsx.md
+      - "03 · Components & Props": level-1/03-components-props.md
+      - "04 · State with useState": level-1/04-state-usestate.md
+      - "05 · Handling Events": level-1/05-events.md
+      - "06 · Conditional Rendering, Lists & Keys": level-1/06-conditional-lists-keys.md
+      - "07 · Forms & Controlled Inputs": level-1/07-forms-controlled-inputs.md
+      - "08 · useEffect Basics": level-1/08-useeffect-basics.md
+      - "09 · Styling React Apps": level-1/09-styling.md
+      - "10 · Project — Expense Tracker": level-1/10-project-expense-tracker.md
+  - "Level 2 · Intermediate":
+      - Overview: level-2/index.md
+      - "01 · Composition & children": level-2/01-composition-children.md
+      - "02 · Lifting State & Data Flow": level-2/02-lifting-state.md
+      - "03 · useReducer": level-2/03-usereducer.md
+      - "04 · Context": level-2/04-context.md
+      - "05 · Custom Hooks": level-2/05-custom-hooks.md
+      - "06 · Data Fetching, Loading & Errors": level-2/06-data-fetching.md
+      - "07 · Routing with React Router": level-2/07-react-router.md
+      - "08 · Performance Basics: memo, useMemo, useCallback": level-2/08-performance-memo.md
+      - "09 · Testing with Vitest & Testing Library": level-2/09-testing-vitest-rtl.md
+      - "10 · Project — Recipe Finder SPA": level-2/10-project-recipe-finder.md
+  - "Level 3 · Advanced":
+      - Overview: level-3/index.md
+      - "01 · The Render & Reconciliation Model": level-3/01-render-reconciliation.md
+      - "02 · Client State: Zustand vs Redux Toolkit": level-3/02-state-management.md
+      - "03 · Server State with TanStack Query": level-3/03-tanstack-query.md
+      - "04 · Accessibility in React": level-3/04-accessibility.md
+      - "05 · Forms at Scale": level-3/05-forms-at-scale.md
+      - "06 · Error Boundaries & Suspense": level-3/06-error-boundaries-suspense.md
+      - "07 · Code-Splitting & Lazy Loading": level-3/07-code-splitting.md
+      - "08 · TypeScript with React": level-3/08-typescript-react.md
+      - "09 · Animation": level-3/09-animation.md
+      - "10 · Project — Kanban Board": level-3/10-project-kanban.md
+  - "Level 4 · Master":
+      - Overview: level-4/index.md
+      - "01 · Server Components & Frameworks": level-4/01-server-components.md
+      - "02 · Concurrent Rendering": level-4/02-concurrent-rendering.md
+      - "03 · Performance Profiling": level-4/03-performance-profiling.md
+      - "04 · Design Systems & Component Libraries": level-4/04-design-systems.md
+      - "05 · Architecture for Large Apps": level-4/05-architecture.md
+      - "06 · Security in React Apps": level-4/06-security.md
+      - "07 · Testing Strategy": level-4/07-testing-strategy.md
+      - "08 · Building & Deploying": level-4/08-deployment.md
+      - "09 · Internationalization": level-4/09-internationalization.md
+      - "10 · Capstone — Team Dashboard": level-4/10-capstone.md
