@@ -1,6 +1,6 @@
 ---
 title: "Learn React Free: Hooks-First Beginner to Master Course"
-description: "Free React course built on function components and hooks — 40 lessons with runnable code, the mechanisms behind rendering, and 4 hands-on projects."
+description: "Free React course built on function components and hooks — 36 lessons and 4 projects with runnable code, the mechanisms behind rendering, and 4 hands-on projects."
 ---
 
 # React Mastery Path
