@@ -1,0 +1,4186 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="180 React interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the React Mastery Path.">
+      
+      
+      
+        <link rel="canonical" href="https://learnmasterypath.com/react-mastery-path/interview-questions/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../cheat-sheet/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+  
+  <title>React Interview Questions and Answers (180 Questions)</title>
+
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/progress-tracker.css">
+    
+      <link rel="stylesheet" href="../stylesheets/final-quiz.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-05VBGCXN12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-05VBGCXN12');
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mastery Path">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="React Interview Questions and Answers (180 Questions)">
+  <meta property="og:description" content="180 React interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the React Mastery Path.">
+  <meta property="og:url" content="https://learnmasterypath.com/react-mastery-path/interview-questions/">
+  <meta property="og:image" content="https://learnmasterypath.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mastery Path: free structured courses, beginner to master">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="React Interview Questions and Answers (180 Questions)">
+  <meta name="twitter:description" content="180 React interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the React Mastery Path.">
+  <meta name="twitter:image" content="https://learnmasterypath.com/og-image.png">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9440969811959397"
+     crossorigin="anonymous"></script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Mastery Path", "item": "https://learnmasterypath.com/"},
+      {"@type": "ListItem", "position": 2, "name": "React Mastery Path", "item": "https://learnmasterypath.com/react-mastery-path/"},
+      {"@type": "ListItem", "position": 3, "name": "Interview Questions", "item": "https://learnmasterypath.com/react-mastery-path/interview-questions/"}
+    ]
+  }
+  </script>
+  <style>
+    .md-banner a:hover { text-decoration: underline !important; }
+    .mp-related { margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--md-default-fg-color--lightest); font-size: .78rem; }
+    .mp-related h2 { font-size: .9rem; margin: 0 0 .5rem; }
+    .mp-related ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem .9rem; }
+    .mp-related li { margin: 0 !important; }
+  </style>
+  <script type="application/json" id="mp-course-meta">{"home": false, "id": "react-mastery-path", "name": "React Mastery Path", "repo": "https://github.com/sigilipelli/react-mastery-path", "src": "interview-questions.md", "url": "https://learnmasterypath.com/react-mastery-path/"}</script>
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/learn.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/course.css?v=1">
+  <script src="https://learnmasterypath.com/assets/learn.js" defer></script>
+  <script src="https://learnmasterypath.com/assets/signup.js" defer></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#react-interview-questions-and-answers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <a href="https://learnmasterypath.com/" style="color: inherit; text-decoration: none;">
+    &larr; Mastery Path &middot; all 100+ free courses
+  </a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/search/" style="color: inherit; text-decoration: none;">Search all courses</a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/resume/" style="color: inherit; font-weight: 700; text-decoration: none;">
+    Got the skills? Free resume ATS check &rarr;
+  </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="React Mastery Path" class="md-header__button md-logo" aria-label="React Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            React Mastery Path
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              React Interview Questions and Answers (180 Questions)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sigilipelli/react-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    react-mastery-path
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Interview Questions
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../cheat-sheet/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Cheat Sheet
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 1 · Entry
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 2 · Intermediate
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-3/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 3 · Advanced
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-4/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 4 · Master
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quiz/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Final Quiz
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="React Mastery Path" class="md-nav__button md-logo" aria-label="React Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    React Mastery Path
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sigilipelli/react-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    react-mastery-path
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Entry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Entry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-setup-with-vite-your-first-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Setup with Vite &amp; Your First Component
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-jsx-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · JSX in Depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-components-props" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Components &amp; Props
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-state-with-usestate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · State with useState
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-handling-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Handling Events
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-conditional-rendering-lists-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Conditional Rendering, Lists &amp; Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-forms-controlled-inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Forms &amp; Controlled Inputs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-useeffect-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · useEffect Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-styling-react-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Styling React Apps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-expense-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — Expense Tracker
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-intermediate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Intermediate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Intermediate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-composition-children" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Composition &amp; children
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-lifting-state-data-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Lifting State &amp; Data Flow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-usereducer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · useReducer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Context
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-custom-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Custom Hooks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-data-fetching-loading-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Data Fetching, Loading &amp; Errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-routing-with-react-router" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Routing with React Router
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-performance-basics-memo-usememo-usecallback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Performance Basics: memo, useMemo, useCallback
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-testing-with-vitest-testing-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Testing with Vitest &amp; Testing Library
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-recipe-finder-spa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — Recipe Finder SPA
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Advanced
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Advanced">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-the-render-reconciliation-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · The Render &amp; Reconciliation Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-client-state-zustand-vs-redux-toolkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Client State: Zustand vs Redux Toolkit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-server-state-with-tanstack-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Server State with TanStack Query
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-accessibility-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Accessibility in React
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-forms-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Forms at Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-error-boundaries-suspense" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Error Boundaries &amp; Suspense
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-code-splitting-lazy-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Code-Splitting &amp; Lazy Loading
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-typescript-with-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · TypeScript with React
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Animation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-kanban-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — Kanban Board
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Master
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Master">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-server-components-frameworks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Server Components &amp; Frameworks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-concurrent-rendering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Concurrent Rendering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-performance-profiling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Performance Profiling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-design-systems-component-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Design Systems &amp; Component Libraries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-architecture-for-large-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Architecture for Large Apps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-security-in-react-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Security in React Apps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-testing-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Testing Strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-building-deploying" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Building &amp; Deploying
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-internationalization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Internationalization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-capstone-team-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Capstone — Team Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cart-reducer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cart reducer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normalise-an-api-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normalise an API response
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cheat-sheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheat Sheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 · Entry
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 1 · Entry
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/01-setup-vite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Setup with Vite & Your First Component
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/02-jsx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · JSX in Depth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/03-components-props/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Components & Props
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/04-state-usestate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · State with useState
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/05-events/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Handling Events
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/06-conditional-lists-keys/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Conditional Rendering, Lists & Keys
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/07-forms-controlled-inputs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Forms & Controlled Inputs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/08-useeffect-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · useEffect Basics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/09-styling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Styling React Apps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/10-project-expense-tracker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — Expense Tracker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-2/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 · Intermediate
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 2 · Intermediate
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/01-composition-children/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Composition & children
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/02-lifting-state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Lifting State & Data Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/03-usereducer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · useReducer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/04-context/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Context
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/05-custom-hooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Custom Hooks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/06-data-fetching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Data Fetching, Loading & Errors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/07-react-router/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Routing with React Router
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/08-performance-memo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Performance Basics: memo, useMemo, useCallback
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/09-testing-vitest-rtl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Testing with Vitest & Testing Library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/10-project-recipe-finder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — Recipe Finder SPA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-3/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3 · Advanced
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 3 · Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/01-render-reconciliation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · The Render & Reconciliation Model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/02-state-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Client State: Zustand vs Redux Toolkit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/03-tanstack-query/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Server State with TanStack Query
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/04-accessibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Accessibility in React
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/05-forms-at-scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Forms at Scale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/06-error-boundaries-suspense/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Error Boundaries & Suspense
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/07-code-splitting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Code-Splitting & Lazy Loading
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/08-typescript-react/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · TypeScript with React
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/09-animation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Animation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/10-project-kanban/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — Kanban Board
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-4/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4 · Master
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 4 · Master
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/01-server-components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Server Components & Frameworks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/02-concurrent-rendering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Concurrent Rendering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/03-performance-profiling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Performance Profiling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/04-design-systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Design Systems & Component Libraries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/05-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Architecture for Large Apps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/06-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Security in React Apps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/07-testing-strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Testing Strategy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/08-deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Building & Deploying
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/09-internationalization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Internationalization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/10-capstone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Capstone — Team Dashboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quiz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Final Quiz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Entry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Entry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-setup-with-vite-your-first-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Setup with Vite &amp; Your First Component
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-jsx-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · JSX in Depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-components-props" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Components &amp; Props
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-state-with-usestate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · State with useState
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-handling-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Handling Events
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-conditional-rendering-lists-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Conditional Rendering, Lists &amp; Keys
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-forms-controlled-inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Forms &amp; Controlled Inputs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-useeffect-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · useEffect Basics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-styling-react-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Styling React Apps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-expense-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — Expense Tracker
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-intermediate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Intermediate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Intermediate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-composition-children" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Composition &amp; children
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-lifting-state-data-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Lifting State &amp; Data Flow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-usereducer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · useReducer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Context
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-custom-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Custom Hooks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-data-fetching-loading-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Data Fetching, Loading &amp; Errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-routing-with-react-router" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Routing with React Router
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-performance-basics-memo-usememo-usecallback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Performance Basics: memo, useMemo, useCallback
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-testing-with-vitest-testing-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Testing with Vitest &amp; Testing Library
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-recipe-finder-spa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — Recipe Finder SPA
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Advanced
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Advanced">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-the-render-reconciliation-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · The Render &amp; Reconciliation Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-client-state-zustand-vs-redux-toolkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Client State: Zustand vs Redux Toolkit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-server-state-with-tanstack-query" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Server State with TanStack Query
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-accessibility-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Accessibility in React
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-forms-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Forms at Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-error-boundaries-suspense" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Error Boundaries &amp; Suspense
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-code-splitting-lazy-loading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Code-Splitting &amp; Lazy Loading
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-typescript-with-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · TypeScript with React
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-animation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Animation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-kanban-board" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — Kanban Board
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Master
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Master">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-server-components-frameworks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Server Components &amp; Frameworks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-concurrent-rendering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Concurrent Rendering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-performance-profiling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Performance Profiling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-design-systems-component-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Design Systems &amp; Component Libraries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-architecture-for-large-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Architecture for Large Apps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-security-in-react-apps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Security in React Apps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-testing-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Testing Strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-building-deploying" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Building &amp; Deploying
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-internationalization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Internationalization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-capstone-team-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Capstone — Team Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cart-reducer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cart reducer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#normalise-an-api-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normalise an API response
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+  
+  
+
+
+<h1 id="react-interview-questions-and-answers">React Interview Questions and Answers<a class="headerlink" href="#react-interview-questions-and-answers" title="Permanent link">&para;</a></h1>
+<p><strong>180 questions</strong> with the correct answer and a short explanation, organised from beginner (Level 1) to advanced (Level 4). Every question comes from a lesson in the free React Mastery Path, so you can open the lesson to go deeper.</p>
+<div class="admonition tip">
+<p class="admonition-title">Practise, don't just read</p>
+<p>Each lesson also ends with an interactive quiz, and the <a href="../quiz/">final quiz</a> tests all four levels. Try to answer each question below before reading the answer.</p>
+</div>
+<h2 id="level-1-entry">Level 1 · Entry<a class="headerlink" href="#level-1-entry" title="Permanent link">&para;</a></h2>
+<h3 id="01-setup-with-vite-your-first-component"><a href="../level-1/01-setup-vite/">01 · Setup with Vite &amp; Your First Component</a><a class="headerlink" href="#01-setup-with-vite-your-first-component" title="Permanent link">&para;</a></h3>
+<p><strong>Q1.</strong> Why does the course use Vite rather than Create React App?</p>
+<p><strong>Answer:</strong> CRA is deprecated and no longer recommended; Vite is fast, nearly config-free and small enough to read</p>
+<p>For routing and server rendering the React docs point to frameworks (Level 4).</p>
+<p><strong>Q2.</strong> What does the -- in <code>npm create vite@latest react-lab -- --template react</code> do?</p>
+<p><strong>Answer:</strong> Passes --template react through npm to the Vite scaffolder</p>
+<p>Use --template react-ts for TypeScript.</p>
+<p><strong>Q3.</strong> What does src/main.jsx do?</p>
+<p><strong>Answer:</strong> Boots React and mounts &lt;App /&gt; (via createRoot)</p>
+<p>App.jsx is the root component; vite.config.js enables the React plugin.</p>
+<p><strong>Q4.</strong> What does the React plugin in vite.config.js provide?</p>
+<p><strong>Answer:</strong> The JSX transform and Fast Refresh</p>
+<p>index.html is the entry point that Vite serves.</p>
+<h3 id="02-jsx-in-depth"><a href="../level-1/02-jsx/">02 · JSX in Depth</a><a class="headerlink" href="#02-jsx-in-depth" title="Permanent link">&para;</a></h3>
+<p><strong>Q5.</strong> What does JSX compile to?</p>
+<p><strong>Answer:</strong> Function calls that produce plain objects</p>
+<p>That's why most JSX 'rules' are obvious consequences.</p>
+<p><strong>Q6.</strong> What can go inside {} in JSX?</p>
+<p><strong>Answer:</strong> Expressions such as a ternary, &amp;&amp;, or .map(), not statements like if or for</p>
+<p>Compute values above the return or use expression forms.</p>
+<p><strong>Q7.</strong> Which are the correct JSX attribute names?</p>
+<p><strong>Answer:</strong> className, htmlFor, onClick, tabIndex</p>
+<p>aria-* and data-* keep their dashes.</p>
+<p><strong>Q8.</strong> Why use a fragment (&lt;&gt;…&lt;/&gt;) instead of a div in a table row?</p>
+<p><strong>Answer:</strong> A component returns one value, and a div inside &lt;tr&gt; would be invalid HTML; fragments add nothing to the DOM</p>
+<p>Use &lt;Fragment key={id}&gt; when a key is needed.</p>
+<h3 id="03-components-props"><a href="../level-1/03-components-props/">03 · Components &amp; Props</a><a class="headerlink" href="#03-components-props" title="Permanent link">&para;</a></h3>
+<p><strong>Q9.</strong> What are props?</p>
+<p><strong>Answer:</strong> A component's arguments, collected into one object passed as the first argument</p>
+<p>The usual style destructures them in the signature.</p>
+<p><strong>Q10.</strong> When does the default <code>inStock = true</code> apply?</p>
+<p><strong>Answer:</strong> When the prop is missing or undefined, but not for null or false</p>
+<p>It is an ordinary JavaScript default parameter.</p>
+<p><strong>Q11.</strong> What is the children prop?</p>
+<p><strong>Answer:</strong> Whatever you put between a component's opening and closing tags</p>
+<p>It is the basis of composition.</p>
+<p><strong>Q12.</strong> How do children talk back to parents?</p>
+<p><strong>Answer:</strong> Through function props, such as onSelect</p>
+<p>Parents decide what data a child gets; the child turns it into UI.</p>
+<h3 id="04-state-with-usestate"><a href="../level-1/04-state-usestate/">04 · State with useState</a><a class="headerlink" href="#04-state-with-usestate" title="Permanent link">&para;</a></h3>
+<p><strong>Q13.</strong> After one click, what does n show for three <code>setN(n + 1)</code> calls starting from 0?</p>
+<p><strong>Answer:</strong> 1, because n is a constant snapshot of 0 in this render</p>
+<p>All three calls say 'set it to 0 + 1'.</p>
+<p><strong>Q14.</strong> How do you make three increments in one click add up to 3?</p>
+<p><strong>Answer:</strong> Use updater functions: setN(prev =&gt; prev + 1)</p>
+<p>React queues them and feeds each the previous result.</p>
+<p><strong>Q15.</strong> Why does a plain <code>let count = 0</code> fail as a counter?</p>
+<p><strong>Answer:</strong> Changing it doesn't trigger a re-render, and it resets to 0 on every render</p>
+<p>State lives outside the function call, managed by React.</p>
+<p><strong>Q16.</strong> Why mutate-then-set (profile.city = 'Chennai'; setProfile(profile)) is a bug?</p>
+<p><strong>Answer:</strong> React compares with Object.is and sees the same object, so it may skip the update</p>
+<p>Create a new object: setProfile({ ...profile, city: 'Chennai' }).</p>
+<h3 id="05-handling-events"><a href="../level-1/05-events/">05 · Handling Events</a><a class="headerlink" href="#05-handling-events" title="Permanent link">&para;</a></h3>
+<p><strong>Q17.</strong> What is the difference between onClick={handleSave} and onClick={handleSave()}?</p>
+<p><strong>Answer:</strong> The first passes a reference; the second runs handleSave during render and passes its return value</p>
+<p>To pass arguments, wrap in an arrow function.</p>
+<p><strong>Q18.</strong> How do you prevent a form's default submission in React?</p>
+<p><strong>Answer:</strong> Call e.preventDefault(); returning false doesn't work</p>
+<p>The handler then reads data with FormData.</p>
+<p><strong>Q19.</strong> When does onChange fire on a text input in React?</p>
+<p><strong>Answer:</strong> On every keystroke, like the DOM input event</p>
+<p>It doesn't wait for the field to lose focus.</p>
+<p><strong>Q20.</strong> What does e.stopPropagation() in a delete button inside a clickable card do?</p>
+<p><strong>Answer:</strong> Stops the click from also reaching the card's onOpen</p>
+<p>Events bubble up the component tree.</p>
+<h3 id="06-conditional-rendering-lists-keys"><a href="../level-1/06-conditional-lists-keys/">06 · Conditional Rendering, Lists &amp; Keys</a><a class="headerlink" href="#06-conditional-rendering-lists-keys" title="Permanent link">&para;</a></h3>
+<p><strong>Q21.</strong> What renders for {messages.length &amp;&amp; &lt;MessageList /&gt;} when messages is empty?</p>
+<p><strong>Answer:</strong> A literal "0"</p>
+<p>React renders numbers; use messages.length &gt; 0 &amp;&amp;.</p>
+<p><strong>Q22.</strong> Which branching style suits cases where whole outputs differ?</p>
+<p><strong>Answer:</strong> Early return with if</p>
+<p>Ternaries suit two small inline pieces; &amp;&amp; suits 'show this or nothing'.</p>
+<p><strong>Q23.</strong> What happens to a component's state when it returns null?</p>
+<p><strong>Answer:</strong> The component still exists and keeps its state; it just produces no DOM</p>
+<p>Example: a Toast with no message.</p>
+<p><strong>Q24.</strong> How do you turn an array into elements?</p>
+<p><strong>Answer:</strong> With .map(), giving each element a stable key</p>
+<p>Keys help React match items between renders.</p>
+<h3 id="07-forms-controlled-inputs"><a href="../level-1/07-forms-controlled-inputs/">07 · Forms &amp; Controlled Inputs</a><a class="headerlink" href="#07-forms-controlled-inputs" title="Permanent link">&para;</a></h3>
+<p><strong>Q25.</strong> What is a controlled input?</p>
+<p><strong>Answer:</strong> React owns the value through state, and every keystroke updates state</p>
+<p>React is then the single source of truth.</p>
+<p><strong>Q26.</strong> What happens if you give an input value without onChange?</p>
+<p><strong>Answer:</strong> It becomes read-only and React warns; use defaultValue for an uncontrolled starting value</p>
+<p>defaultValue sets the initial value of an uncontrolled input.</p>
+<p><strong>Q27.</strong> What does <code>setForm(prev =&gt; ({ ...prev, [name]: value }))</code> allow?</p>
+<p><strong>Answer:</strong> One handler serves every field, using a computed property key from the input's name</p>
+<p>The name attribute must match a key in the state object.</p>
+<p><strong>Q28.</strong> How do you read a checkbox in a handler?</p>
+<p><strong>Answer:</strong> e.target.checked</p>
+<p>Text, select and textarea use e.target.value, a string.</p>
+<h3 id="08-useeffect-basics"><a href="../level-1/08-useeffect-basics/">08 · useEffect Basics</a><a class="headerlink" href="#08-useeffect-basics" title="Permanent link">&para;</a></h3>
+<p><strong>Q29.</strong> When does an effect with the dependency array [] run?</p>
+<p><strong>Answer:</strong> After mount only (and again on remount)</p>
+<p>Omitting the array runs it after every render; [a, b] runs when they change.</p>
+<p><strong>Q30.</strong> When does React call an effect's cleanup function?</p>
+<p><strong>Answer:</strong> Before re-running the effect with new dependencies, and on unmount</p>
+<p>Without cleanup, every remount would leave another interval running.</p>
+<p><strong>Q31.</strong> Why does StrictMode run effects twice in development?</p>
+<p><strong>Answer:</strong> It mounts, unmounts and remounts to test that cleanup is correct</p>
+<p>With correct cleanup, the visible behaviour is identical.</p>
+<p><strong>Q32.</strong> What is the right response to a react-hooks/exhaustive-deps warning?</p>
+<p><strong>Answer:</strong> Fix the cause; every reactive value the effect reads belongs in the array</p>
+<p>The rule is enabled in the Vite template.</p>
+<h3 id="09-styling-react-apps"><a href="../level-1/09-styling/">09 · Styling React Apps</a><a class="headerlink" href="#09-styling-react-apps" title="Permanent link">&para;</a></h3>
+<p><strong>Q33.</strong> What do CSS Modules (*.module.css) provide?</p>
+<p><strong>Answer:</strong> Generated unique class names, so one component's .button can't clash with another's, at zero runtime cost</p>
+<p>You still write normal CSS.</p>
+<p><strong>Q34.</strong> What are inline styles in React good and poor for?</p>
+<p><strong>Answer:</strong> Good for truly dynamic values; poor for :hover, media queries and pseudo-elements</p>
+<p>Numbers get px for most length properties: { margin: 8 } → 8px.</p>
+<p><strong>Q35.</strong> What is the hybrid for dynamic values?</p>
+<p><strong>Answer:</strong> Pass them through CSS custom properties, such as style={{ '--pct': ... }}</p>
+<p>The CSS then uses var(--pct) and keeps :hover and transitions.</p>
+<p><strong>Q36.</strong> What is the problem with plain global CSS in a big app?</p>
+<p><strong>Answer:</strong> Every .btn anywhere gets the rules, so collisions creep in</p>
+<p>It's fine for resets, typography and tokens.</p>
+<h3 id="10-project-expense-tracker"><a href="../level-1/10-project-expense-tracker/">10 · Project — Expense Tracker</a><a class="headerlink" href="#10-project-expense-tracker" title="Permanent link">&para;</a></h3>
+<p><strong>Q37.</strong> Where does the list of expenses live in the tracker, and why?</p>
+<p><strong>Answer:</strong> In App, because the list, summary and form all need it</p>
+<p>Form field values stay in ExpenseForm because nobody else cares until submit.</p>
+<p><strong>Q38.</strong> Which data is derived rather than state?</p>
+<p><strong>Answer:</strong> The filtered list, totals and breakdown, computed in App during render</p>
+<p>Ask: who needs it, and can it be computed from something else?</p>
+<p><strong>Q39.</strong> What does monthKey("2026-09-14") return with isoDate.slice(0, 7)?</p>
+<p><strong>Answer:</strong> "2026-09"</p>
+<p>It's used for the month filter.</p>
+<p><strong>Q40.</strong> What is the caveat with today() using toISOString()?</p>
+<p><strong>Answer:</strong> It's UTC, so near midnight it may be off by a day in some time zones</p>
+<p>A production app would format the local date instead.</p>
+<h2 id="level-2-intermediate">Level 2 · Intermediate<a class="headerlink" href="#level-2-intermediate" title="Permanent link">&para;</a></h2>
+<h3 id="01-composition-children"><a href="../level-2/01-composition-children/">01 · Composition &amp; children</a><a class="headerlink" href="#01-composition-children" title="Permanent link">&para;</a></h3>
+<p><strong>Q41.</strong> What problem does composition solve compared with a 'god component'?</p>
+<p><strong>Answer:</strong> Instead of a prop for every variation, the parent passes pieces of UI</p>
+<p>Every new design would otherwise add another prop and conditional.</p>
+<p><strong>Q42.</strong> How do you give a layout several regions?</p>
+<p><strong>Answer:</strong> Pass JSX through ordinary props like header and sidebar, plus children</p>
+<p>JSX elements are values that can be passed around.</p>
+<p><strong>Q43.</strong> Why build ConfirmDelete out of a generic Dialog?</p>
+<p><strong>Answer:</strong> Dialog stays generic and never learns about 'delete'; the specific component is thin and readable</p>
+<p>It's specialisation through composition.</p>
+<p><strong>Q44.</strong> What is a render prop?</p>
+<p><strong>Answer:</strong> A prop that is a function returning UI</p>
+<p>It lets the parent control a slot that depends on the child's data.</p>
+<h3 id="02-lifting-state-data-flow"><a href="../level-2/02-lifting-state/">02 · Lifting State &amp; Data Flow</a><a class="headerlink" href="#02-lifting-state-data-flow" title="Permanent link">&para;</a></h3>
+<p><strong>Q45.</strong> In which direction does React data flow?</p>
+<p><strong>Answer:</strong> Down through props</p>
+<p>Two components can't 'reach across' to each other.</p>
+<p><strong>Q46.</strong> What fixes two panels that need to coordinate as an accordion?</p>
+<p><strong>Answer:</strong> Lift the open state to their closest common parent and pass it and callbacks down</p>
+<p>Remove state from the children, pass values down, add state to the parent.</p>
+<p><strong>Q47.</strong> What does <code>setOpenId(current =&gt; (current === id ? null : id))</code> do?</p>
+<p><strong>Answer:</strong> Toggles: opens this panel, or closes it if already open, so only one is open</p>
+<p>The parent stores only the id of the open panel.</p>
+<p><strong>Q48.</strong> Why is lifting state described as the most important structural decision?</p>
+<p><strong>Answer:</strong> It decides which component owns each piece of data</p>
+<p>Wrong ownership leads to duplication and sync bugs.</p>
+<h3 id="03-usereducer"><a href="../level-2/03-usereducer/">03 · useReducer</a><a class="headerlink" href="#03-usereducer" title="Permanent link">&para;</a></h3>
+<p><strong>Q49.</strong> What does a reducer take and return?</p>
+<p><strong>Answer:</strong> The current state and an action; it returns the next state</p>
+<p>Handlers report what happened rather than how to change state.</p>
+<p><strong>Q50.</strong> What must a reducer be?</p>
+<p><strong>Answer:</strong> Pure: no mutation, API calls, randomness or reading the current time</p>
+<p>It is a plain function outside the component.</p>
+<p><strong>Q51.</strong> How should actions be named?</p>
+<p><strong>Answer:</strong> After events ('item_added', 'filter_changed'), not setters like 'setItems'</p>
+<p>It keeps the reducer a record of what the user did and lets one action update several fields consistently.</p>
+<p><strong>Q52.</strong> When does useReducer beat useState?</p>
+<p><strong>Answer:</strong> Several values change together, updates are complex, or you want to unit test transitions without rendering</p>
+<p>For one or two independent values useState is simpler.</p>
+<h3 id="04-context"><a href="../level-2/04-context/">04 · Context</a><a class="headerlink" href="#04-context" title="Permanent link">&para;</a></h3>
+<p><strong>Q53.</strong> What is prop drilling?</p>
+<p><strong>Answer:</strong> Passing a prop through several components that don't use it so a deep one can</p>
+<p>Context lets any descendant read the value directly.</p>
+<p><strong>Q54.</strong> When is the default value passed to createContext used?</p>
+<p><strong>Answer:</strong> Only when there is no provider above the consumer</p>
+<p>The three steps are create, provide, consume.</p>
+<p><strong>Q55.</strong> Why wrap context in a provider component and a custom hook that throws without the provider?</p>
+<p><strong>Answer:</strong> It turns 'forgot the provider' into a clear error instead of a confusing undefined</p>
+<p>The null default plus the throwing useAuth does this.</p>
+<p><strong>Q56.</strong> Why does the AuthProvider wrap its value in useMemo?</p>
+<p><strong>Answer:</strong> So consumers don't re-render just because the provider re-rendered with a new object</p>
+<p>The memo depends on [user]. Note the lesson says real authentication needs a server.</p>
+<h3 id="05-custom-hooks"><a href="../level-2/05-custom-hooks/">05 · Custom Hooks</a><a class="headerlink" href="#05-custom-hooks" title="Permanent link">&para;</a></h3>
+<p><strong>Q57.</strong> What is a custom hook?</p>
+<p><strong>Answer:</strong> A function whose name starts with use and which calls other hooks</p>
+<p>You share the logic, not the component.</p>
+<p><strong>Q58.</strong> What does useOnlineStatus return?</p>
+<p><strong>Answer:</strong> A boolean online value, kept up to date by online/offline listeners with cleanup</p>
+<p>Both components then use it instead of copying the effect.</p>
+<p><strong>Q59.</strong> Does calling the same custom hook in two components share state between them?</p>
+<p><strong>Answer:</strong> No: each call gets its own state</p>
+<p>Hooks share logic, not state.</p>
+<p><strong>Q60.</strong> Which Rules of Hooks apply?</p>
+<p><strong>Answer:</strong> Call hooks only at the top level of components or custom hooks, not in loops, conditions or nested functions</p>
+<p>React relies on the call order being the same on every render.</p>
+<h3 id="06-data-fetching-loading-errors"><a href="../level-2/06-data-fetching/">06 · Data Fetching, Loading &amp; Errors</a><a class="headerlink" href="#06-data-fetching-loading-errors" title="Permanent link">&para;</a></h3>
+<p><strong>Q61.</strong> Why does a single status field ('idle' | 'loading' | 'success' | 'error') beat separate isLoading and isError booleans?</p>
+<p><strong>Answer:</strong> The booleans could contradict each other</p>
+<p>One status models states explicitly.</p>
+<p><strong>Q62.</strong> Why check res.ok after fetch?</p>
+<p><strong>Answer:</strong> fetch only rejects on network failure, so a 404 or 500 would otherwise be treated as success</p>
+<p>The code throws Error(<code>Request failed: ${res.status}</code>).</p>
+<p><strong>Q63.</strong> What does returning () =&gt; controller.abort() from the effect achieve?</p>
+<p><strong>Answer:</strong> It cancels the in-flight request when userId changes or the component unmounts, avoiding out-of-order responses</p>
+<p>The catch ignores AbortError because we cancelled it ourselves.</p>
+<p><strong>Q64.</strong> What were the problems of the naive useEffect fetch?</p>
+<p><strong>Answer:</strong> No loading indicator, swallowed errors, 404/500 treated as success, and nothing handles changing inputs</p>
+<p>The lesson notes most production apps eventually hand this job to a library or framework.</p>
+<h3 id="07-routing-with-react-router"><a href="../level-2/07-react-router/">07 · Routing with React Router</a><a class="headerlink" href="#07-routing-with-react-router" title="Permanent link">&para;</a></h3>
+<p><strong>Q65.</strong> What does Outlet do in a layout route?</p>
+<p><strong>Answer:</strong> Renders the matching child route, while the header stays mounted</p>
+<p>The layout wraps all child pages.</p>
+<p><strong>Q66.</strong> What does path="products/:productId" define, and how is it read?</p>
+<p><strong>Answer:</strong> A dynamic segment, read with useParams()</p>
+<p>For example /products/42.</p>
+<p><strong>Q67.</strong> What does &lt;Route path="*"&gt; do?</p>
+<p><strong>Answer:</strong> Catches everything else, serving as the 404 page</p>
+<p>index marks the child shown at the parent's exact path.</p>
+<p><strong>Q68.</strong> What does NavLink's end prop do on to="/"?</p>
+<p><strong>Answer:</strong> Stops / from matching every URL</p>
+<p>NavLink adds an active class and aria-current="page" when its route matches.</p>
+<h3 id="08-performance-basics-memo-usememo-usecallback"><a href="../level-2/08-performance-memo/">08 · Performance Basics: memo, useMemo, useCallback</a><a class="headerlink" href="#08-performance-basics-memo-usememo-usecallback" title="Permanent link">&para;</a></h3>
+<p><strong>Q69.</strong> Which things cause a component to re-render?</p>
+<p><strong>Answer:</strong> Its own state change, its parent re-rendering, or a context it reads changing</p>
+<p>Props change only because the parent re-rendered.</p>
+<p><strong>Q70.</strong> Is a re-render the same as a DOM update?</p>
+<p><strong>Answer:</strong> No: React re-runs your function, diffs the result, and touches the DOM only where output differs</p>
+<p>Most re-renders are cheap.</p>
+<p><strong>Q71.</strong> What should you do before reaching for memo, useMemo or useCallback?</p>
+<p><strong>Answer:</strong> Measure with the Profiler on a production build and try structural fixes like moving state down</p>
+<p>Dev mode is slower and double-renders in StrictMode.</p>
+<p><strong>Q72.</strong> Why move the query state into a Search component rather than Dashboard?</p>
+<p><strong>Answer:</strong> So typing doesn't re-render the expensive chart</p>
+<p>State lives where it's used.</p>
+<h3 id="09-testing-with-vitest-testing-library"><a href="../level-2/09-testing-vitest-rtl/">09 · Testing with Vitest &amp; Testing Library</a><a class="headerlink" href="#09-testing-with-vitest-testing-library" title="Permanent link">&para;</a></h3>
+<p><strong>Q73.</strong> What roles do Vitest and React Testing Library play?</p>
+<p><strong>Answer:</strong> Vitest runs the tests (sharing Vite's config); RTL renders components and finds elements</p>
+<p>jsdom simulates the DOM in Node; jest-dom adds matchers like toBeInTheDocument().</p>
+<p><strong>Q74.</strong> Which query does RTL put first in priority?</p>
+<p><strong>Answer:</strong> getByRole with an accessible name</p>
+<p>getByTestId is the last resort.</p>
+<p><strong>Q75.</strong> What do getBy, queryBy differ in when nothing matches?</p>
+<p><strong>Answer:</strong> getBy throws; queryBy returns null (for asserting something is absent)</p>
+<p>Use getBy for elements that should be there now.</p>
+<p><strong>Q76.</strong> In the Counter test with initial={2}, what is expected after one click on Increment?</p>
+<p><strong>Answer:</strong> Count: 3</p>
+<p>user.click is awaited, then the text is asserted.</p>
+<h3 id="10-project-recipe-finder-spa"><a href="../level-2/10-project-recipe-finder/">10 · Project — Recipe Finder SPA</a><a class="headerlink" href="#10-project-recipe-finder-spa" title="Permanent link">&para;</a></h3>
+<p><strong>Q77.</strong> Where does the search query live in the Recipe Finder?</p>
+<p><strong>Answer:</strong> In the URL (/?q=paneer)</p>
+<p>URL state makes searches shareable and bookmarkable.</p>
+<p><strong>Q78.</strong> What does the project's toRecipe normalisation do?</p>
+<p><strong>Answer:</strong> Converts the API's strIngredient1…20 fields into a clean ingredients array, keeping API shapes out of components</p>
+<p>It's done once in api.js.</p>
+<p><strong>Q79.</strong> What does TheMealDB return when nothing matches?</p>
+<p><strong>Answer:</strong> { meals: null }</p>
+<p>Handle null explicitly.</p>
+<p><strong>Q80.</strong> How are favourites persisted and shared?</p>
+<p><strong>Answer:</strong> Through a context and reducer, persisted in localStorage, with a count in the header on every page</p>
+<p>The project reuses the useFetch and debounced-value hooks too.</p>
+<h2 id="level-3-advanced">Level 3 · Advanced<a class="headerlink" href="#level-3-advanced" title="Permanent link">&para;</a></h2>
+<h3 id="01-the-render-reconciliation-model"><a href="../level-3/01-render-reconciliation/">01 · The Render &amp; Reconciliation Model</a><a class="headerlink" href="#01-the-render-reconciliation-model" title="Permanent link">&para;</a></h3>
+<p><strong>Q81.</strong> Which are React's three phases?</p>
+<p><strong>Answer:</strong> Trigger, render, commit</p>
+<p>Rendering means calling your functions, not painting pixels.</p>
+<p><strong>Q82.</strong> What happens in the render phase?</p>
+<p><strong>Answer:</strong> React calls component functions and compares with the previous output; no DOM is touched, and it can be interrupted in concurrent rendering</p>
+<p>The commit phase applies changes and is never interrupted.</p>
+<p><strong>Q83.</strong> What happens when a span switches to an input at the same position?</p>
+<p><strong>Answer:</strong> The span and everything below it is destroyed and a new input is created</p>
+<p>Different types produce different trees.</p>
+<p><strong>Q84.</strong> Why does React use heuristics instead of a general tree diff?</p>
+<p><strong>Answer:</strong> The general algorithm is around O(n³), too slow; heuristics based on types and keys make it linear</p>
+<p>The two assumptions: different types give different trees; keys identify stable children.</p>
+<h3 id="02-client-state-zustand-vs-redux-toolkit"><a href="../level-3/02-state-management/">02 · Client State: Zustand vs Redux Toolkit</a><a class="headerlink" href="#02-client-state-zustand-vs-redux-toolkit" title="Permanent link">&para;</a></h3>
+<p><strong>Q85.</strong> What is the key distinction that removes most of the need for a store?</p>
+<p><strong>Answer:</strong> Server state (data living on a server) versus client state (UI state existing only in the browser)</p>
+<p>Server state is best handled by a caching library; what's left for a store is usually small.</p>
+<p><strong>Q86.</strong> How does a Zustand component avoid re-rendering on unrelated changes?</p>
+<p><strong>Answer:</strong> It passes a selector and re-renders only when the selected value changes</p>
+<p>AddToCart selects a function that never changes, so cart updates don't re-render it.</p>
+<p><strong>Q87.</strong> Why is <code>useCartStore(s =&gt; ({ items: s.items, clear: s.clear }))</code> a problem?</p>
+<p><strong>Answer:</strong> It builds a new object every time, so it re-renders on every store change</p>
+<p>Select separately or use useShallow.</p>
+<p><strong>Q88.</strong> Does Zustand need a provider?</p>
+<p><strong>Answer:</strong> No; the store is a module-level singleton</p>
+<p>set merges returned partial state one level deep.</p>
+<h3 id="03-server-state-with-tanstack-query"><a href="../level-3/03-tanstack-query/">03 · Server State with TanStack Query</a><a class="headerlink" href="#03-server-state-with-tanstack-query" title="Permanent link">&para;</a></h3>
+<p><strong>Q89.</strong> How does TanStack Query treat server data?</p>
+<p><strong>Answer:</strong> As a cache that can go stale, not as state you own</p>
+<p>It adds caching, deduplication, background refresh and mutation handling.</p>
+<p><strong>Q90.</strong> What does queryKey ['todos'] mean for multiple components?</p>
+<p><strong>Answer:</strong> They share one cache entry and one request</p>
+<p>The key must include every variable the query depends on, like a dependency array.</p>
+<p><strong>Q91.</strong> What is the difference between isPending and isFetching?</p>
+<p><strong>Answer:</strong> isPending means no data yet; isFetching means a request is in flight, including background refetches</p>
+<p>That lets you show 'Refreshing…' over old data.</p>
+<p><strong>Q92.</strong> Why must queryFn throw on a non-OK response?</p>
+<p><strong>Answer:</strong> Otherwise failed responses would be treated as data; the query only sees errors through rejected promises</p>
+<p>The lesson uses an res.ok check.</p>
+<h3 id="04-accessibility-in-react"><a href="../level-3/04-accessibility/">04 · Accessibility in React</a><a class="headerlink" href="#04-accessibility-in-react" title="Permanent link">&para;</a></h3>
+<p><strong>Q93.</strong> Why is &lt;button type="button" onClick={save}&gt; better than &lt;div onClick={save}&gt;?</p>
+<p><strong>Answer:</strong> It's focusable, activated by Enter/Space, and announced as a button</p>
+<p>The first rule of ARIA: don't use ARIA when a native element does the job.</p>
+<p><strong>Q94.</strong> What does alt="" mean on an image?</p>
+<p><strong>Answer:</strong> It's decorative and skipped by screen readers</p>
+<p>Informative images need meaningful alt text.</p>
+<p><strong>Q95.</strong> Why use useId for label and input ids?</p>
+<p><strong>Answer:</strong> Hard-coded ids break when a component renders twice</p>
+<p>It also builds aria-describedby ids.</p>
+<p><strong>Q96.</strong> What does :focus-visible do?</p>
+<p><strong>Answer:</strong> Shows the focus ring for keyboard users without showing it on mouse click</p>
+<p>Never remove outlines without replacing them.</p>
+<h3 id="05-forms-at-scale"><a href="../level-3/05-forms-at-scale/">05 · Forms at Scale</a><a class="headerlink" href="#05-forms-at-scale" title="Permanent link">&para;</a></h3>
+<p><strong>Q97.</strong> How does React Hook Form register inputs by default?</p>
+<p><strong>Answer:</strong> Uncontrolled, reading values from the DOM via refs, so typing doesn't re-render the whole form</p>
+<p>That's why it scales to larger forms.</p>
+<p><strong>Q98.</strong> What does z.coerce.number() do?</p>
+<p><strong>Answer:</strong> Converts the string from an input into a number before checking it</p>
+<p>Inputs always give strings.</p>
+<p><strong>Q99.</strong> What does .refine on a Zod object do in the lesson?</p>
+<p><strong>Answer:</strong> Adds a cross-field rule (end date on or after start) and attaches the error to endDate</p>
+<p>The path option attaches the error to a field.</p>
+<p><strong>Q100.</strong> What is the benefit of describing the data once in a schema?</p>
+<p><strong>Answer:</strong> It validates everywhere, on client and ideally the server too</p>
+<p>zodResolver connects the schema to React Hook Form.</p>
+<h3 id="06-error-boundaries-suspense"><a href="../level-3/06-error-boundaries-suspense/">06 · Error Boundaries &amp; Suspense</a><a class="headerlink" href="#06-error-boundaries-suspense" title="Permanent link">&para;</a></h3>
+<p><strong>Q101.</strong> What happens to the app when an error is thrown during render with no error boundary?</p>
+<p><strong>Answer:</strong> The entire app unmounts, leaving a blank page</p>
+<p>An error boundary limits the damage to its subtree.</p>
+<p><strong>Q102.</strong> Which feature still requires a class component?</p>
+<p><strong>Answer:</strong> Error boundaries (no hook equivalent)</p>
+<p>They use getDerivedStateFromError and componentDidCatch.</p>
+<p><strong>Q103.</strong> Which errors does an error boundary NOT catch?</p>
+<p><strong>Answer:</strong> Errors in event handlers and in async code like setTimeout or promise callbacks</p>
+<p>For event handlers use try/catch and set error state.</p>
+<p><strong>Q104.</strong> What does &lt;Suspense fallback&gt; do?</p>
+<p><strong>Answer:</strong> Shows a fallback while something inside is still loading</p>
+<p>Both Suspense and boundaries handle 'not ready' and 'went wrong' declaratively.</p>
+<h3 id="07-code-splitting-lazy-loading"><a href="../level-3/07-code-splitting/">07 · Code-Splitting &amp; Lazy Loading</a><a class="headerlink" href="#07-code-splitting-lazy-loading" title="Permanent link">&para;</a></h3>
+<p><strong>Q105.</strong> What does a dynamic import('./reports') do under Vite?</p>
+<p><strong>Answer:</strong> Becomes a separate chunk (reports-[hash].js) fetched when the line runs</p>
+<p>A static import goes in the main bundle.</p>
+<p><strong>Q106.</strong> What does React.lazy require of the imported module?</p>
+<p><strong>Answer:</strong> A default export that is a component</p>
+<p>For named exports map them to { default: m.Name }.</p>
+<p><strong>Q107.</strong> Why call lazy at module level, not inside a component?</p>
+<p><strong>Answer:</strong> Otherwise each render creates a new lazy type and remounts</p>
+<p>A lazy component also needs a &lt;Suspense&gt; above it.</p>
+<p><strong>Q108.</strong> Why are routes natural places to split?</p>
+<p><strong>Answer:</strong> Users visit one page at a time</p>
+<p>Every user would otherwise download the admin panel before the login page.</p>
+<h3 id="08-typescript-with-react"><a href="../level-3/08-typescript-react/">08 · TypeScript with React</a><a class="headerlink" href="#08-typescript-with-react" title="Permanent link">&para;</a></h3>
+<p><strong>Q109.</strong> What does React.ReactNode mean as a prop type?</p>
+<p><strong>Answer:</strong> Anything renderable: elements, strings, numbers, null, arrays of those</p>
+<p>It's the usual type for children.</p>
+<p><strong>Q110.</strong> How do you make a wrapper accept every native button attribute?</p>
+<p><strong>Answer:</strong> ComponentPropsWithoutRef&lt;'button'&gt; &amp; { ... }</p>
+<p>Then disabled, onClick and aria-* all type-check.</p>
+<p><strong>Q111.</strong> What file extension holds JSX in a typed project?</p>
+<p><strong>Answer:</strong> .tsx</p>
+<p>Start with --template react-ts; types come from @types/react and @types/react-dom.</p>
+<p><strong>Q112.</strong> What is the advantage of string-literal unions such as 'primary' | 'secondary' in props?</p>
+<p><strong>Answer:</strong> Autocomplete and rejection of typos</p>
+<p>React.FC is no longer recommended as a default; plain functions are simpler.</p>
+<h3 id="09-animation"><a href="../level-3/09-animation/">09 · Animation</a><a class="headerlink" href="#09-animation" title="Permanent link">&para;</a></h3>
+<p><strong>Q113.</strong> Which technique is called the cheapest and most robust for UI animation?</p>
+<p><strong>Answer:</strong> CSS transitions driven by a state-changed class</p>
+<p>The element stays mounted; only a class changes.</p>
+<p><strong>Q114.</strong> Which properties are cheap to animate?</p>
+<p><strong>Answer:</strong> transform and opacity, which run on the compositor without layout</p>
+<p>Width, height, top and left force layout work every frame.</p>
+<p><strong>Q115.</strong> Why are exit animations hard in React?</p>
+<p><strong>Answer:</strong> React removes the DOM node immediately, leaving nothing to animate, so you must keep it mounted until the exit finishes</p>
+<p>The useDelayedUnmount hook keeps it mounted for ms before removing.</p>
+<p><strong>Q116.</strong> What does the inert attribute on a hidden drawer do?</p>
+<p><strong>Answer:</strong> Removes its contents from the tab order and accessibility tree</p>
+<p>React 19 supports it as a boolean attribute.</p>
+<h3 id="10-project-kanban-board"><a href="../level-3/10-project-kanban/">10 · Project — Kanban Board</a><a class="headerlink" href="#10-project-kanban-board" title="Permanent link">&para;</a></h3>
+<p><strong>Q117.</strong> Where does server data versus UI-only state live in the Kanban project?</p>
+<p><strong>Answer:</strong> Cards in TanStack Query; selected card and filters in a small Zustand store</p>
+<p>This is the server-state versus client-state split.</p>
+<p><strong>Q118.</strong> What happens in an optimistic move if the server fails?</p>
+<p><strong>Answer:</strong> The change is rolled back</p>
+<p>Optimistic updates show the result immediately, with rollback on failure.</p>
+<p><strong>Q119.</strong> How can cards be moved?</p>
+<p><strong>Answer:</strong> By mouse drag and drop and by keyboard buttons as an accessible alternative</p>
+<p>Accessibility is a project requirement.</p>
+<p><strong>Q120.</strong> What does json-server provide?</p>
+<p><strong>Answer:</strong> A local REST API on db.json with GET/POST /cards and GET/PATCH/DELETE /cards/:id</p>
+<p>Its CLI flags have changed across versions.</p>
+<h2 id="level-4-master">Level 4 · Master<a class="headerlink" href="#level-4-master" title="Permanent link">&para;</a></h2>
+<h3 id="01-server-components-frameworks"><a href="../level-4/01-server-components/">01 · Server Components &amp; Frameworks</a><a class="headerlink" href="#01-server-components-frameworks" title="Permanent link">&para;</a></h3>
+<p><strong>Q121.</strong> What is true of React Server Components?</p>
+<p><strong>Answer:</strong> They run only on the server or at build time; their code never ships to the browser, only their rendered output</p>
+<p>RSC requires a framework or bundler integration, such as Next.js's App Router; you can't flip a switch in a plain Vite app.</p>
+<p><strong>Q122.</strong> What can a Server Component do that a Client Component cannot?</p>
+<p><strong>Answer:</strong> Read databases, files and secrets directly, and be async</p>
+<p>The table lists the opposite set for Client Components.</p>
+<p><strong>Q123.</strong> How do you opt a module into the client in an RSC app?</p>
+<p><strong>Answer:</strong> The 'use client' directive at the top of the file</p>
+<p>Components are Server Components by default.</p>
+<p><strong>Q124.</strong> What does the database library in a Server Component add to the browser bundle?</p>
+<p><strong>Answer:</strong> Zero bytes</p>
+<p>The component awaits its data where the data lives, with no useEffect or loading state.</p>
+<h3 id="02-concurrent-rendering"><a href="../level-4/02-concurrent-rendering/">02 · Concurrent Rendering</a><a class="headerlink" href="#02-concurrent-rendering" title="Permanent link">&para;</a></h3>
+<p><strong>Q125.</strong> What problem does concurrent rendering solve?</p>
+<p><strong>Answer:</strong> A slow render freezing the page, including the text box being typed in</p>
+<p>React can prepare an update in the background, interrupt it, and discard it if outdated.</p>
+<p><strong>Q126.</strong> In useTransition's handleChange, which update is urgent?</p>
+<p><strong>Answer:</strong> setQuery, so the input shows the character now</p>
+<p>The filter update inside startTransition is non-urgent and may lag.</p>
+<p><strong>Q127.</strong> What happens when the user types again before a transition render finishes?</p>
+<p><strong>Answer:</strong> React abandons the in-progress render and restarts with the latest value</p>
+<p>isPending is true while the transition is in progress.</p>
+<p><strong>Q128.</strong> What should you do with isPending?</p>
+<p><strong>Answer:</strong> Dim stale content rather than blanking it</p>
+<p>The demo SlowRow adds artificial slowdown to show the effect.</p>
+<h3 id="03-performance-profiling"><a href="../level-4/03-performance-profiling/">03 · Performance Profiling</a><a class="headerlink" href="#03-performance-profiling" title="Permanent link">&para;</a></h3>
+<p><strong>Q129.</strong> Which Core Web Vital shows React rendering performance most directly?</p>
+<p><strong>Answer:</strong> INP (Interaction to Next Paint)</p>
+<p>A click triggering a 300 ms render is a 300 ms+ interaction.</p>
+<p><strong>Q130.</strong> What is the difference between lab and field data?</p>
+<p><strong>Answer:</strong> Lab data is measured on your machine (Lighthouse, dev tools); field data comes from real users, e.g. via the web-vitals library</p>
+<p>Real users on mid-range phones are the ones who matter.</p>
+<p><strong>Q131.</strong> Which Profiler view is usually the fastest way to find the culprit?</p>
+<p><strong>Answer:</strong> Ranked, which sorts components by own render time</p>
+<p>Selecting a component shows why it rendered.</p>
+<p><strong>Q132.</strong> What does 'Props changed: onSelect' on a memo component usually signal?</p>
+<p><strong>Answer:</strong> An unstable callback is defeating memoization</p>
+<p>It's a classic signal.</p>
+<h3 id="04-design-systems-component-libraries"><a href="../level-4/04-design-systems/">04 · Design Systems &amp; Component Libraries</a><a class="headerlink" href="#04-design-systems-component-libraries" title="Permanent link">&para;</a></h3>
+<p><strong>Q133.</strong> Why should components reference tokens rather than raw hex values?</p>
+<p><strong>Answer:</strong> Theming, such as dark mode or a second brand, becomes a matter of redefining tokens</p>
+<p>Larger systems keep tokens in a neutral format like JSON and generate CSS, iOS and Android outputs from one source.</p>
+<p><strong>Q134.</strong> What do headless libraries (Radix Primitives, React Aria, Headless UI) provide?</p>
+<p><strong>Answer:</strong> Behaviour and ARIA without styles, so you add your own look</p>
+<p>The hard parts are focus trapping, keyboard navigation, typeahead and positioning.</p>
+<p><strong>Q135.</strong> What is a design system?</p>
+<p><strong>Answer:</strong> A shared set of decisions (colours, spacing, type, interaction patterns) packaged as reusable components and documentation</p>
+<p>Done badly it's a pile of over-configurable components everyone works around.</p>
+<p><strong>Q136.</strong> How is dark theme applied in the tokens example?</p>
+<p><strong>Answer:</strong> [data-theme='dark'] redefines the token values</p>
+<p>Components don't change.</p>
+<h3 id="05-architecture-for-large-apps"><a href="../level-4/05-architecture/">05 · Architecture for Large Apps</a><a class="headerlink" href="#05-architecture-for-large-apps" title="Permanent link">&para;</a></h3>
+<p><strong>Q137.</strong> What is the benefit of organising by feature rather than by file type?</p>
+<p><strong>Answer:</strong> Everything about invoices lives in one folder, and deleting a feature deletes one folder</p>
+<p>Ownership also maps cleanly to teams with CODEOWNERS.</p>
+<p><strong>Q138.</strong> What may a feature import from?</p>
+<p><strong>Answer:</strong> shared and other features' public APIs only</p>
+<p>Each feature exposes its public API through index.ts.</p>
+<p><strong>Q139.</strong> How can the dependency rules be enforced?</p>
+<p><strong>Answer:</strong> With lint rules such as no-restricted-imports blocking deep imports into another feature</p>
+<p>Pattern: '@/features/<em>/</em>'.</p>
+<p><strong>Q140.</strong> What should you do if invoices and customers need each other?</p>
+<p><strong>Answer:</strong> Extract the shared concept into shared or a new feature, or have app compose them</p>
+<p>No cycles between features.</p>
+<h3 id="06-security-in-react-apps"><a href="../level-4/06-security/">06 · Security in React Apps</a><a class="headerlink" href="#06-security-in-react-apps" title="Permanent link">&para;</a></h3>
+<p><strong>Q141.</strong> Why does React render '&lt;img src=x onerror=...&gt;' as literal text?</p>
+<p><strong>Answer:</strong> Strings are inserted as text nodes, so the browser never parses them as HTML</p>
+<p>Attribute values are likewise set as values, not injected into markup.</p>
+<p><strong>Q142.</strong> When is dangerouslySetInnerHTML an XSS hole?</p>
+<p><strong>Answer:</strong> When the HTML is influenced by users, even via your own API</p>
+<p>Sanitize with a maintained library such as DOMPurify, or avoid HTML strings.</p>
+<p><strong>Q143.</strong> Why not write your own sanitizer with regular expressions?</p>
+<p><strong>Answer:</strong> HTML parsing has many edge cases (malformed tags, encodings, SVG and MathML namespaces) that attackers exploit</p>
+<p>Use a well-maintained sanitizer.</p>
+<p><strong>Q144.</strong> What is the risk of &lt;a href={user.website}&gt;?</p>
+<p><strong>Answer:</strong> A javascript: URL runs script on click, because React escapes text but a URL is a value the browser acts on</p>
+<p>Validate URL schemes. Authorisation, validation and secrets belong on the server.</p>
+<h3 id="07-testing-strategy"><a href="../level-4/07-testing-strategy/">07 · Testing Strategy</a><a class="headerlink" href="#07-testing-strategy" title="Permanent link">&para;</a></h3>
+<p><strong>Q145.</strong> Where does the 'testing trophy' say most effort should go?</p>
+<p><strong>Answer:</strong> Integration tests, with a broad static base, solid unit tests and thin E2E</p>
+<p>It's a heuristic, not a law.</p>
+<p><strong>Q146.</strong> What do integration tests with MSW mock?</p>
+<p><strong>Answer:</strong> Only the network, so real fetch, TanStack Query setup and error handling all run</p>
+<p>MSW intercepts at the network layer.</p>
+<p><strong>Q147.</strong> What should E2E tests cover?</p>
+<p><strong>Answer:</strong> A handful of critical journeys like sign up, log in and checkout</p>
+<p>They catch routing, build config, real browser APIs and the backend contract.</p>
+<p><strong>Q148.</strong> What should you not test?</p>
+<p><strong>Answer:</strong> Implementation details, third-party libraries' own behaviour, trivial markup</p>
+<p>Such tests break on refactors without catching real bugs.</p>
+<h3 id="08-building-deploying"><a href="../level-4/08-deployment/">08 · Building &amp; Deploying</a><a class="headerlink" href="#08-building-deploying" title="Permanent link">&para;</a></h3>
+<p><strong>Q149.</strong> Why must you never put secrets in VITE_ variables?</p>
+<p><strong>Answer:</strong> They're replaced at build time, so the literal string ends up in the public JavaScript bundle</p>
+<p>Changing a value also requires a rebuild; use runtime config if one build serves many environments.</p>
+<p><strong>Q150.</strong> What is the SPA fallback for?</p>
+<p><strong>Answer:</strong> Serving index.html for unknown paths so reloading /invoices/42 works with BrowserRouter</p>
+<p>Real files like /assets/*.js are still served normally.</p>
+<p><strong>Q151.</strong> Why are hashed asset filenames served with Cache-Control: public, max-age=31536000, immutable?</p>
+<p><strong>Answer:</strong> The filename changes when content changes, so they can be cached for a year</p>
+<p>index.html should not be cached that long.</p>
+<p><strong>Q152.</strong> Why test npm run preview before deploying?</p>
+<p><strong>Answer:</strong> Some bugs (env vars, base paths, case-sensitive imports on Linux) only appear in the build</p>
+<p>It serves dist/ locally.</p>
+<h3 id="09-internationalization"><a href="../level-4/09-internationalization/">09 · Internationalization</a><a class="headerlink" href="#09-internationalization" title="Permanent link">&para;</a></h3>
+<p><strong>Q153.</strong> Why can't you build translated sentences by concatenating fragments?</p>
+<p><strong>Answer:</strong> Word order differs between languages</p>
+<p>Use message catalogs with interpolation.</p>
+<p><strong>Q154.</strong> What do Intl APIs provide without a library?</p>
+<p><strong>Answer:</strong> Locale-aware formatting of numbers, currency, dates, relative times, lists and plural rules</p>
+<p>You never hand-format them.</p>
+<p><strong>Q155.</strong> Why cache Intl formatter instances?</p>
+<p><strong>Answer:</strong> Constructing Intl objects is relatively expensive</p>
+<p>The lesson caches by <code>${locale}|${currency}</code>.</p>
+<p><strong>Q156.</strong> How many plural forms do languages have?</p>
+<p><strong>Answer:</strong> It varies: English has two, some languages one, Arabic has six categories</p>
+<p>That's why plural rules come from Intl.PluralRules or the catalog library.</p>
+<h3 id="10-capstone-team-dashboard"><a href="../level-4/10-capstone/">10 · Capstone — Team Dashboard</a><a class="headerlink" href="#10-capstone-team-dashboard" title="Permanent link">&para;</a></h3>
+<p><strong>Q157.</strong> What backend options does the capstone offer?</p>
+<p><strong>Answer:</strong> A local mock server (json-server or MSW), your own small API, or an RSC framework</p>
+<p>Write down your choice and why in an ADR.</p>
+<p><strong>Q158.</strong> Where should filter and sort state live for the task table?</p>
+<p><strong>Answer:</strong> In the URL</p>
+<p>It makes views shareable and bookmarkable.</p>
+<p><strong>Q159.</strong> Which non-functional requirements does the capstone set?</p>
+<p><strong>Answer:</strong> Accessibility with zero axe violations on key screens, a JS budget enforced in CI, good INP, errors contained per widget, strict TypeScript</p>
+<p>CI runs lint, types, tests, E2E and build.</p>
+<p><strong>Q160.</strong> What is the capstone's learning approach?</p>
+<p><strong>Answer:</strong> A specification, decisions, milestones and a review checklist rather than a copy-along tutorial</p>
+<p>Plan for a few weeks of part-time work.</p>
+<h2 id="mixed-questions-across-all-levels">Mixed questions across all levels<a class="headerlink" href="#mixed-questions-across-all-levels" title="Permanent link">&para;</a></h2>
+<p><strong>Q161.</strong> Using this reducer (the same pure logic you would give useReducer):</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">cartReducer</span><span class="p">(</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">a</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s1">'added'</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">e</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">state</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">i</span><span class="p">.</span><span class="nx">id</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">a</span><span class="p">.</span><span class="nx">item</span><span class="p">.</span><span class="nx">id</span><span class="p">)</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="nx">e</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">state</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">i</span><span class="p">.</span><span class="nx">id</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">a</span><span class="p">.</span><span class="nx">item</span><span class="p">.</span><span class="nx">id</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">i</span><span class="p">,</span><span class="w"> </span><span class="nx">qty</span><span class="o">:</span><span class="w"> </span><span class="nx">i</span><span class="p">.</span><span class="nx">qty</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nx">i</span><span class="p">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">               </span><span class="o">:</span><span class="w"> </span><span class="p">[...</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">a</span><span class="p">.</span><span class="nx">item</span><span class="p">,</span><span class="w"> </span><span class="nx">qty</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">}]</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s1">'removed'</span><span class="o">:</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nx">state</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">i</span><span class="p">.</span><span class="nx">id</span><span class="w"> </span><span class="o">!==</span><span class="w"> </span><span class="nx">a</span><span class="p">.</span><span class="nx">id</span><span class="p">)</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s1">'qty_set'</span><span class="o">:</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nx">state</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">i</span><span class="p">.</span><span class="nx">id</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">a</span><span class="p">.</span><span class="nx">id</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="nx">i</span><span class="p">,</span><span class="w"> </span><span class="nx">qty</span><span class="o">:</span><span class="w"> </span><span class="nx">a</span><span class="p">.</span><span class="nx">qty</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nx">i</span><span class="p">).</span><span class="nx">filter</span><span class="p">(</span><span class="nx">i</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">i</span><span class="p">.</span><span class="nx">qty</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="k">default</span><span class="o">:</span><span class="w"> </span><span class="k">throw</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="s1">'Unknown action: '</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">a</span><span class="p">.</span><span class="nx">type</span><span class="p">)</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="p">}</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="kd">let</span><span class="w"> </span><span class="nx">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nx">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">cartReducer</span><span class="p">(</span><span class="nx">s</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">'added'</span><span class="p">,</span><span class="w"> </span><span class="nx">item</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">'pen'</span><span class="p">,</span><span class="w"> </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">})</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="nx">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">cartReducer</span><span class="p">(</span><span class="nx">s</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">'added'</span><span class="p">,</span><span class="w"> </span><span class="nx">item</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">'pen'</span><span class="p">,</span><span class="w"> </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">})</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="nx">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">cartReducer</span><span class="p">(</span><span class="nx">s</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">'added'</span><span class="p">,</span><span class="w"> </span><span class="nx">item</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">'ink'</span><span class="p">,</span><span class="w"> </span><span class="nx">price</span><span class="o">:</span><span class="w"> </span><span class="mf">50</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">})</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">s</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">t</span><span class="p">,</span><span class="w"> </span><span class="nx">i</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">t</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">i</span><span class="p">.</span><span class="nx">price</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">i</span><span class="p">.</span><span class="nx">qty</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">))</span>
+</code></pre></div>
+What is printed?</p>
+<p><strong>Answer:</strong> 70</p>
+<p>pen is added twice (qty 2, 20) plus ink once (50) = 70.</p>
+<p><strong>Q162.</strong> Continuing from the previous cart (pen qty 2, ink qty 1), what is the state after <code>{ type: 'qty_set', id: 1, qty: 0 }</code>?</p>
+<p><strong>Answer:</strong> Only ink remains, because items with qty 0 are filtered out</p>
+<p>The reducer maps the change and then filters out quantities of 0 or less. Verified by running it.</p>
+<p><strong>Q163.</strong> Why does the reducer return new arrays and objects instead of mutating?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">before</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">qty</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">}]</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">after</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">cartReducer</span><span class="p">(</span><span class="nx">before</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">'added'</span><span class="p">,</span><span class="w"> </span><span class="nx">item</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">})</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">before</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">after</span><span class="p">,</span><span class="w"> </span><span class="nx">before</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">qty</span><span class="p">,</span><span class="w"> </span><span class="nx">after</span><span class="p">[</span><span class="mf">0</span><span class="p">].</span><span class="nx">qty</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Answer:</strong> The new state is a different array, and the old value is untouched: false 1 2</p>
+<p>React compares state with Object.is, so a changed result must be a new reference; printed output is <code>false 1 2</code>.</p>
+<p><strong>Q164.</strong> What does the reducer do with an unknown action type like { type: 'x' }?</p>
+<p><strong>Answer:</strong> Throws Error: Unknown action: x</p>
+<p>The default branch throws, which surfaces typos in action names.</p>
+<p><strong>Q165.</strong> A click handler runs <code>setN(n + 1)</code> three times with n = 0 in this render. What is n after the re-render?</p>
+<p><strong>Answer:</strong> 1, because n is the constant 0 in this render's snapshot</p>
+<p>All three calls say 'set it to 0 + 1'.</p>
+<p><strong>Q166.</strong> Using updater functions, <code>setN(p =&gt; p + 1)</code> three times in one click starting from 0 gives:</p>
+<p><strong>Answer:</strong> 3</p>
+<p>React queues the functions and feeds each the previous result. Simulating the queue gives 3.</p>
+<p><strong>Q167.</strong> In one handler: <code>setN(5); setN(p =&gt; p * 2)</code> starting from 0. What is n afterwards?</p>
+<p><strong>Answer:</strong> 10</p>
+<p>5 is queued as a value, then the updater doubles it. (A function followed by a value, like <code>setN(p =&gt; p + 1); setN(10)</code>, ends at 10: the last one wins.)</p>
+<p><strong>Q168.</strong> React decides whether state changed using Object.is. Which result is correct?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">is</span><span class="p">(</span><span class="kc">NaN</span><span class="p">,</span><span class="w"> </span><span class="kc">NaN</span><span class="p">),</span><span class="w"> </span><span class="nb">Object</span><span class="p">.</span><span class="nx">is</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">0</span><span class="p">),</span><span class="w"> </span><span class="nb">Object</span><span class="p">.</span><span class="nx">is</span><span class="p">({},</span><span class="w"> </span><span class="p">{}))</span>
+</code></pre></div>
+<p><strong>Answer:</strong> true false false</p>
+<p>NaN is the same as NaN, 0 and -0 differ, and two separate objects are different references. Verified by running it.</p>
+<p><strong>Q169.</strong> With <code>{messages.length &amp;&amp; &lt;MessageList /&gt;}</code> and an empty messages array, what appears?</p>
+<p><strong>Answer:</strong> A literal "0"</p>
+<p>0 is a number React renders. Use messages.length &gt; 0 &amp;&amp;.</p>
+<p><strong>Q170.</strong> What does this print for tasks = [done a, not-done b, done c]?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tasks</span><span class="p">.</span><span class="nx">filter</span><span class="p">(</span><span class="nx">t</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">t</span><span class="p">.</span><span class="nx">done</span><span class="p">).</span><span class="nx">map</span><span class="p">(</span><span class="nx">t</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">t</span><span class="p">.</span><span class="nx">id</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s1">','</span><span class="p">))</span>
+</code></pre></div>
+<p><strong>Answer:</strong> a,c</p>
+<p>filter keeps done tasks and map takes their ids.</p>
+<p><strong>Q171.</strong> When does <code>useEffect(fn, [])</code> run?</p>
+<p><strong>Answer:</strong> After mount only (and again if remounted, such as in StrictMode in development)</p>
+<p>An omitted array runs after every render; [a, b] re-runs when they change.</p>
+<p><strong>Q172.</strong> Which cleanup behaviour is correct for an effect that starts setInterval?</p>
+<p><strong>Answer:</strong> Return () =&gt; clearInterval(id); React runs it before re-running the effect and on unmount</p>
+<p>Without it, each remount leaves another interval running.</p>
+<p><strong>Q173.</strong> Two components both call useOnlineStatus(). How much state is shared?</p>
+<p><strong>Answer:</strong> None: each call gets its own state; hooks share logic, not state</p>
+<p>To share state, lift it up or use context or a store.</p>
+<p><strong>Q174.</strong> Which is the correct place for state that two sibling components both need to read and change?</p>
+<p><strong>Answer:</strong> Their closest common parent, passed down with callbacks</p>
+<p>This is lifting state up.</p>
+<p><strong>Q175.</strong> What does the TanStack Query key ['todos', id] do?</p>
+<p><strong>Answer:</strong> Identifies a separate cache entry per id; switching back reuses the cached data</p>
+<p>The key includes every variable the query depends on, like a dependency array.</p>
+<p><strong>Q176.</strong> What happens to an error thrown in an event handler with an error boundary above it?</p>
+<p><strong>Answer:</strong> It is not caught by the boundary; use try/catch and set error state</p>
+<p>Boundaries catch errors during rendering, lifecycle methods and constructors, not event handlers or async code.</p>
+<p><strong>Q177.</strong> Why must lazy() be called at module level?</p>
+<p><strong>Answer:</strong> Otherwise each render creates a new lazy type and remounts the component</p>
+<p>A lazy component also needs a &lt;Suspense&gt; boundary above it.</p>
+<p><strong>Q178.</strong> What does startTransition mark as low priority?</p>
+<p><strong>Answer:</strong> The updates inside it, so urgent input updates stay responsive and an outdated render can be abandoned</p>
+<p>isPending is true while the transition runs.</p>
+<p><strong>Q179.</strong> Why can't you set secrets in VITE_ environment variables?</p>
+<p><strong>Answer:</strong> They are replaced at build time and end up in the public JavaScript bundle</p>
+<p>Authorisation, validation and secrets belong on the server.</p>
+<p><strong>Q180.</strong> What is the right use of dangerouslySetInnerHTML with user-provided rich text?</p>
+<p><strong>Answer:</strong> Sanitize with a maintained library like DOMPurify, or avoid HTML strings entirely</p>
+<p>Regex sanitizers miss many HTML edge cases.</p>
+<h2 id="practical-coding-questions">Practical coding questions<a class="headerlink" href="#practical-coding-questions" title="Permanent link">&para;</a></h2>
+<h3 id="cart-reducer">Cart reducer<a class="headerlink" href="#cart-reducer" title="Permanent link">&para;</a></h3>
+<p>Write cartReducer(state, action) for a shopping cart. Actions: { type: 'added', item } (increase qty if the id exists, else add with qty 1), { type: 'removed', id }, and { type: 'qty_set', id, qty } (items with qty &lt;= 0 are removed). Unknown types must throw <code>Unknown action: &lt;type&gt;</code>. Never mutate state.</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>function cartReducer(state, action) {
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  // your code
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>}
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>let s = []
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>s = cartReducer(s, { type: 'added', item: { id: 1, name: 'pen', price: 10 } })
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>s = cartReducer(s, { type: 'added', item: { id: 1, name: 'pen', price: 10 } })
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>s = cartReducer(s, { type: 'added', item: { id: 2, name: 'ink', price: 50 } })
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>console.log(JSON.stringify(s))
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>console.log(s.reduce((t, i) =&gt; t + i.price * i.qty, 0))
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>s = cartReducer(s, { type: 'qty_set', id: 1, qty: 0 })
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>console.log(JSON.stringify(s))
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>[{"id":1,"name":"pen","price":10,"qty":2},{"id":2,"name":"ink","price":50,"qty":1}]
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>70
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>[{"id":2,"name":"ink","price":50,"qty":1}]
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+function cartReducer(state, action) {
+  switch (action.type) {
+    case 'added': {
+      const existing = state.find(i =&gt; i.id === action.item.id)
+      return existing
+        ? state.map(i =&gt; (i.id === action.item.id ? { ...i, qty: i.qty + 1 } : i))
+        : [...state, { ...action.item, qty: 1 }]
+    }
+    case 'removed':
+      return state.filter(i =&gt; i.id !== action.id)
+    case 'qty_set':
+      return state
+        .map(i =&gt; (i.id === action.id ? { ...i, qty: action.qty } : i))
+        .filter(i =&gt; i.qty &gt; 0)
+    default:
+      throw new Error('Unknown action: ' + action.type)
+  }
+}
+
+let s = []
+s = cartReducer(s, { type: 'added', item: { id: 1, name: 'pen', price: 10 } })
+s = cartReducer(s, { type: 'added', item: { id: 1, name: 'pen', price: 10 } })
+s = cartReducer(s, { type: 'added', item: { id: 2, name: 'ink', price: 50 } })
+console.log(JSON.stringify(s))
+console.log(s.reduce((t, i) =&gt; t + i.price * i.qty, 0))
+s = cartReducer(s, { type: 'qty_set', id: 1, qty: 0 })
+console.log(JSON.stringify(s))
+```
+
+Because the reducer is pure, it can be unit tested without rendering, and it returns new arrays and objects so React's Object.is comparison sees the change. Verified by running the solution in Node: the output matches.
+</code></pre></div>
+<h3 id="normalise-an-api-response">Normalise an API response<a class="headerlink" href="#normalise-an-api-response" title="Permanent link">&para;</a></h3>
+<p>Write toRecipe(meal) that turns a TheMealDB-style object (fields i1..i3 for ingredient names and m1..m3 for measures) into { id, ingredients: [{ name, measure }] }. Trim values and skip empty ingredient names.</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>function toRecipe(meal) {
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  // your code
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>}
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>console.log(JSON.stringify(toRecipe({ id: '7', i1: ' rice ', m1: '1 cup', i2: '', m2: '', i3: 'salt', m3: undefined })))
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>{"id":"7","ingredients":[{"name":"rice","measure":"1 cup"},{"name":"salt"}]}
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+function toRecipe(meal) {
+  const ingredients = []
+  for (let i = 1; i &lt;= 3; i++) {
+    const name = meal['i' + i]?.trim()
+    const measure = meal['m' + i]?.trim()
+    if (name) ingredients.push({ name, measure })
+  }
+  return { id: meal.id, ingredients }
+}
+
+console.log(JSON.stringify(toRecipe({ id: '7', i1: ' rice ', m1: '1 cup', i2: '', m2: '', i3: 'salt', m3: undefined })))
+```
+
+Normalising once keeps API shapes out of components. JSON.stringify omits the undefined measure for salt. Verified by running the solution in Node: output matches.
+</code></pre></div>
+<hr />
+<p>More free practice: the <a href="../">React Mastery Path</a> curriculum, the <a href="https://learnmasterypath.com/interview-pack/">Interview Prep Pack</a> and the <a href="https://learnmasterypath.com/resume/">free resume ATS check</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+  
+  <nav class="mp-related" aria-label="Related free courses">
+    <h2>Related free courses</h2>
+    <ul>
+      <li><a href="https://learnmasterypath.com/nextjs-mastery-path/">Next.js</a></li><li><a href="https://learnmasterypath.com/angular-mastery-path/">Angular</a></li><li><a href="https://learnmasterypath.com/vue-mastery-path/">Vue.js</a></li><li><a href="https://learnmasterypath.com/html-css-mastery-path/">HTML & CSS</a></li><li><a href="https://learnmasterypath.com/tailwind-mastery-path/">Tailwind CSS</a></li>
+      <li><a href="https://learnmasterypath.com/">All 100+ courses &rarr;</a></li>
+    </ul>
+  </nav>
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../cheat-sheet/" class="md-footer__link md-footer__link--next" aria-label="Next: Cheat Sheet">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Cheat Sheet
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+  <div class="mp-foot">
+    <div class="mp-foot-inner">
+      <a class="mp-foot-brand" href="https://learnmasterypath.com/"><svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg><span>Mastery Path</span></a>
+      <nav class="mp-sitelinks" aria-label="Site and legal links">
+        <a href="https://learnmasterypath.com/">All courses</a>
+        <a href="https://learnmasterypath.com/about.html">About</a>
+        <a href="https://learnmasterypath.com/contact.html">Contact</a>
+        <a href="https://learnmasterypath.com/react-mastery-path/privacy/">Privacy Policy</a>
+        <a href="https://learnmasterypath.com/terms.html">Terms</a>
+        <a href="https://learnmasterypath.com/react-mastery-path/license/">License</a>
+        <a href="https://learnmasterypath.com/verify/">Verify a certificate</a>
+      </nav>
+    </div>
+    <p class="mp-license-note">
+      © 2026 Vinod Kumar Sigilipelli · Except where otherwise noted, lesson content is licensed under
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and code examples under the
+      <a href="https://opensource.org/license/mit">MIT License</a>.
+    </p>
+  </div>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.path", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "navigation.indexes", "toc.follow", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../javascripts/progress-tracker.js"></script>
+      
+        <script src="../javascripts/final-quiz.js"></script>
+      
+    
+  </body>
+</html>
