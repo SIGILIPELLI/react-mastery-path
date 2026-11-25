@@ -38,7 +38,7 @@ destructuring, modules, promises, `async`/`await`, array methods like `map` and
 - Keep one Vite project open while you read (Level 1, lesson 1 sets it up) and paste
   every snippet into it. Changing a line and watching what happens teaches more than reading.
 - Do the **Exercise** at the end of each lesson before moving on. They are small on
-  purpose; the projects at the end of each level are where things come together.
+  purpose; the projects at the end of Levels 1–3 and the capstone at the end of Level 4 are where things come together.
 - The code targets React 18 and 19. Where an API exists only in React 19 (for example
   `useActionState` or `ref` as a plain prop), the lesson says so.
 - Use the search bar at the top of the page to jump straight to a hook or topic.
